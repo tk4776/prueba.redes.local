@@ -1,0 +1,211 @@
+<!DOCTYPE html> <!-- Estructura basica de la pagina del proyecto 19/05/2020, Redes de Computadoras, 
+    ESIME CU, Equipo 2: Ramírez Pérez Manuel Alejandro, Martínez López Beatriz Jaqueline -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Redes de Computadoras</title>
+    <!-- Enlace al archivo styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="fondo"></div>
+    <!-- WRAPPER PRINCIPAL -->
+    <div id="wrapper">
+        <!-- WRAPPER Para el Banner -->
+        <div id="banner-wrapper">
+            <header>
+                <div id="header-inner">
+                    <a href="index.html" id="logo">
+                        <img src="img/iconos/icono_0.png" alt="Instituto Politécnico Nacional">
+                    </a>
+                    <a id="logo1">
+                        <img src="img/iconos/icono_1.png" alt="Escuela Superior de Ingeniería Mecánica y Eléctrica">
+                    </a>
+                    <!-- Barra de Navegación -->
+                    <nav>
+                        <a href="#" id="icono-menu">
+                            <img srcset width="32px" height="32px" src = "img/iconos/icono_nav.svg" alt="nav_icono">
+                        </a>
+                        
+                        <!-- Lista Desordenada -->
+                        <ul>
+                            <li>
+                                <a href="#" class="actual">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#Proyecto">Proyecto</a>
+                            </li>
+                            <li>
+                                <a href="#Equipo">Equipo-Dos</a> 
+                            </li>    
+                            <li>
+                                <a href="#Archivos">Descargas</a>
+                            </li>
+                            <li>
+                                <a href="#Contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Control deslizante -->
+            <div class="slider-container">
+                <div class="slider fade" id="portada">
+                    <img src="img/slider/slider_0.png" alt="Portada">
+                </div>
+                <div class="slider fade">
+                    <img src="img/slider/slider_1.jpg" alt="Edificio de Gobierno, ESIME CU">
+                </div>
+                <div class="slider fade">
+                    <img src="img/slider/slider_2.jpg" alt="Edificio Uno, ESIME CU">
+                </div>
+                <div class="slider fade">
+                        <img src="img/slider/slider_3.jpg" alt="Laboratorio de Conectividad, ESIME CU">                        
+                </div>
+
+                <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="siguiente" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE PROYECTO -->
+    
+    <!-- 1/4, Sub sección del DHCP -->
+    <section class="uno-cuatro" id="Proyecto">
+        <div class="icon-wrap">
+            <i class="dhcp">
+                <img src="img/iconos/dhcp-icono.png" alt="Icono_DHCP">
+            </i>
+        </div>
+        <h3>DHCP</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <!-- 2/4, Sub sección del DNS -->
+    <section class="uno-cuatro" id="Proyecto">
+        <div class="icon-wrap">
+            <i class="dns">
+                <img src="img/iconos/dns-icono.png" alt="Icono_DNS">
+            </i>
+        </div>
+        <h3>DNS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet non libero, ipsa temporibus
+             neque maiores ad nemo eum facilis, unde ullam culpa molestias doloremque aperiam dolores sed optio! 
+             Possimus.</p>
+    </section>
+    <!-- 3/4, Sub sección del HTTP -->
+    <section class="uno-cuatro" id="Proyecto">
+        <div class="icon-wrap">
+            <i class="http">
+                <img src="img/iconos/http-icono.png" alt="Icono_HTTP">
+            </i>
+        </div>
+        <h3>HTTP</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam, repudiandae aut voluptate odit 
+            ut minus provident similique, unde labore quaerat saepe eaque possimus obcaecati consequuntur 
+            inventore nulla delectus earum.</p>
+    </section>
+    <!-- 4/4, Sub sección del FTP -->
+    <section class="uno-cuatro" id="Proyecto">
+        <div class="icon-wrap">
+            <i class="ftp">
+                <img src="img/iconos/ftp-icono.png" alt="Icono_FTP">
+            </i>
+        </div>
+        <h3>FTP</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium commodi minima quo 
+            omnis expedita natus ut ab, voluptate, sapiente quam reiciendis temporibus deserunt vel magni 
+            aliquid eos molestiae debitis.</p>
+    </section>
+
+    <!-- SECCIÓN DE EQUIPO DOS -->
+    <div class="clearfix-padding"></div>
+    <!-- 1/3, Sub sección miembro uno -->
+    <div class="uno-tres" id="Equipo">
+        <h3>Beatriz Jaqueline Martinez Lopez</h3>
+        <img src="img/iconos/usr-fem-icono.png" alt="Jaqueline_Foto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ab.
+        </p>
+    </div> 
+    <!-- 2/3, Sub sección miembro dos -->
+    <div class="uno-tres" id="Equipo">
+        <h3>Manuel Alejandro Ramírez Pérez</h3>
+        <img src="img/iconos/usr-ma2-icono.png" alt="Manuel_Foto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima placeat 
+            tempora repudiandae!</p>
+    </div> 
+    <!-- 3/3, Sub sección miembro tres -->
+    <div class="uno-tres" id="Equipo">
+        <h3>Ezequiel Castro Morales</h3>
+        <img src="img/iconos/usr-ma1-icono.png" alt="Ezequiel_Foto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi. Hic perferendis vel 
+            velit voluptates!</p>
+    </div> 
+    
+    <!-- SECCIÓN DE DESCARGAS -->
+    <div class="clearfix-padding"></div>
+    <section class="columna-izq" id="Archivos">
+        <h3>Descarga las practicas de redes de computadoras</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia cupiditate harum ipsam 
+            epellendus labore sed, voluptas cumque obcaecati, quasi illum voluptatibus impedit quod. 
+            Nisi eligendi minus alias minima sunt.</p>
+    </section>
+    <section class="barra-lateral">
+        <img src="img/iconos/descarga-icono.png" alt="Descarga_Icono">
+    </section>
+    
+    <!-- SECCIÓN DE CONTACTO -->
+    <div class="clearfix-padding"></div>
+        <!-- Pie de Pagina -->
+    <footer>
+        <div class="banner-wrapper">
+            <div class="icon-text">
+                <div class="icon-text-icon">
+                    <ul class="nav-pie">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Proyecto</a>
+                        </li>
+                        <li>
+                            <a href="#">Equipo-Dos</a>
+                        </li>
+                        <li>
+                            <a href="#">Descargas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="segundo-pie">
+        <p>
+            &copy; <a>Equipo#2, Redes de Computadoras, ESIME Culhuacan, Instituto Politécnico Nacional, 2020</a>
+        </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides(){
+            var i;
+            var slide = document.getElementsByClassName("slider");
+            for(i=0; i<slide.length; i++){
+                slide[i].style.display="none";
+            }
+            slideIndex++;
+            if(slideIndex>slide.length){slideIndex=1}
+            slide[slideIndex-1].style.display="block";
+            setTimeout(showSlides,2000);
+        }
+    </script>
+
+</body>
+</html>

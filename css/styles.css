@@ -1,0 +1,292 @@
+/*Archivo CSS para los estilos del sitio web del proyecto de redes de computadoras, ESIME CU, Equipo 2,
+Ramírez Pérez Manuel Alejandro
+Martínez López Beatriz Jaqueline
+19/05/2020 */
+
+/*Especificaciones generales del css*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    /*background-image: url("../img/fotos/fondo.png");
+    height: 150px;
+    background-repeat: no-repeat;*/
+    font-family: sans-serif;
+    margin: o auto;
+}
+
+/*Para las etiquetas p*/
+p {
+    color: #545454;
+    font-size: 1.75rem;
+    line-height: 155%;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+}
+
+/*Para las etiquetas H3*/
+h3 {
+    font-size: 2.25rem;
+    line-height: 155%;
+    font-weight: bold;
+    color: #363636;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+/*Para las etiquetas a*/
+a {
+    color: #545454;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {   /*Subclase hover de la etiqueta a*/
+    color: wheat;
+    text-transform: uppercase;
+}
+
+/*---------- Para el contenedor general WRAPPER ----------*/
+#wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*Para el encabezado*/
+#banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+}
+header {
+    /*background-image: url("../img/fotos/fondo.png");
+    background-repeat: no-repeat;*/
+    background-color: #6d1a42ee;
+    width: 100%;
+    height: 135px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+header #logo img {
+    margin: 20px;
+    float: left;
+    width: 65px;
+    padding-left: 100px;
+}
+
+header #logo1 img {
+    margin: 20px;
+    float: right;
+    width: 90px;
+    padding-right: 100px;
+    padding-top: 5px;
+}
+    /*Para la Navegación Superior*/
+nav {
+    float: none;
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+
+#icono-menu {
+    display: none;
+    font-size: 50px;
+}
+
+ul{
+    list-style: none; /*Para quitar los puntos de las listas no ordenadas*/
+}
+
+nav ul li {
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #dbdbdbee;
+}
+
+.actual {   /*resaltar la pagina en la que se encuentra desde la barra de navegación*/ 
+    text-transform: uppercase;
+    color: white;
+}
+
+/*Para el Slider*/
+.slider-container {
+    box-sizing: border-box;
+    max-width: 1200;
+    max-height: 539;
+    position: relative;
+    margin: auto;
+    margin-top: 175px;
+}
+.slider {
+    position: center;
+    display: none;
+}
+.slider #portada img{
+    height: 539px;
+    width: 1200px;
+}
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #06b600;
+    font-weight: bold;
+    font-size: 5rem;
+    transition: 1s ease;
+    border-radius: 0 15px 15px 0;
+    background-color: #00000041;
+}
+
+.siguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.anterior:hover, .siguiente:hover {
+    background-color: #00000041;
+    color: #b60000;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 60s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+    from { opacity: .5 }
+    to { opacity: 1 }
+}
+
+@keyframes fade {
+    from { opacity: .5 }
+    to { opacity: 1 }
+}
+
+/*---------- PARA LA SECCIÓN DE PROYECTO ----------*/
+.uno-cuatro {
+    margin-top: 100px;
+    width: 23.5%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.icon-wrap img{
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.icon-wrap i {
+    text-align: center;
+    color: #545454;
+    font-size: 5rem;
+    padding: 20%;
+}
+
+/*---------- PARA LA SECCIÓN DE EQUIPO DOS ----------*/
+.uno-tres {
+    margin-top: 15rem;
+    width: 31.75%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.uno-tres img {
+    margin: 2;
+    text-align: center;
+}
+.clearfix-padding {
+    clear: both;
+    padding: 2% 2%;
+}
+
+/*---------- PARA LA SECCIÓN DE DESCARGAS ----------*/
+.columna-izq {
+    margin-top: 15rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    float: left;
+    width: 65%;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.barra-lateral {
+    margin-top: 16em;
+    float: right;
+    width: 25%;
+    height: auto;
+    padding: 1%;
+}
+
+/*---------- BARRA DE NAVEGACIÓN FINAL Y CONTACTO ----------*/
+footer {
+    background: #007979;
+    width: 100%;
+    overflow: auto;
+    height: 135px;
+}
+
+.icon-text {
+    width: 100%;
+    margin: 0;
+}
+
+.icon-text-icon {
+    float: right;
+    width: 20%;
+    padding-top: 1%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+.nav-pie {
+    text-align: right;
+}
+
+.nav-pie a {
+    font-size: 110%;
+    color: seashell;
+    font-weight: 300%;
+    line-height: 150%;
+}
+
+.nav-pie a:hover {
+    color: rgba(255, 245, 238, 0.548);
+    text-transform: none;
+}
+
+footer.segundo-pie {
+    height: 35px;
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+footer.segundo-pie p, .segundo-pie a {
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    text-transform: none;
+}
